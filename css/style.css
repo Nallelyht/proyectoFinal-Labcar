@@ -59,3 +59,20 @@ a{
 	padding: 5%;
 	background-color: rgba(62,63,64,0.35);
 }
+input:placeholder{
+	color: #FFF;
+}
+.form-control{
+	display: inline-block;
+}
+.img-map{
+	padding: 2%;
+	width: 80%;
+	margin-top: 5%;
+	border: 1px solid #fff;
+	margin-bottom: 5%;
+}
+.footer{
+	padding: 5%;
+	background-color: #3e3f40;
+}
