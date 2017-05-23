@@ -4,6 +4,9 @@
 .my-nav{
 	padding: 4%;
 	font-size: 1.7vw;
+	position: fixed;
+	z-index: 100;
+	width: 100%;
 }
 .white{
 	background-color: #FFF;
@@ -43,7 +46,8 @@
 .middle{
 	padding: 2%;
 	border: 1px solid #fff;
-	margin: 5%
+	margin: 5% 10% 5% -1.5%;
+	border-left: none;
 }
 a{
 	padding: 2%;
@@ -55,14 +59,28 @@ a{
 	background-position: center;
 }
 .text-driver{
-	margin: 10%;
-	padding: 5%;
-	background-color: rgba(62,63,64,0.35);
+	padding: 5% 5% 15%;
+	background-color: rgba(0,0,0,0.6);
+	margin-left: 100%;
+	margin-right:-1.5%;
+	width: 35%
 }
-input:placeholder{
+
+input[placeholder]{
 	color: #FFF;
+	font-size:80;
 }
 .form-control{
+	display: inline-block;
+}
+.input-road{
+	margin-left: 15%;
+	display: inline-block;
+	margin-top:-10%;
+	width: 100%;
+	
+}
+.icon{
 	display: inline-block;
 }
 .img-map{
@@ -89,4 +107,10 @@ footer a{
 }
 .margin{
 	margin-top: 60%;
+}
+.btn-road{
+	margin: 5%;
+}
+.road{
+	margin-top: 8%;
 }
