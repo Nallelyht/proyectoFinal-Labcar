@@ -1,0 +1,61 @@
+*{
+	font-family: 'Raleway', sans-serif;
+}
+.my-nav{
+	padding: 4%;
+	font-size: 1.7vw;
+}
+.white{
+	background-color: #FFF;
+}
+.my-nav a{
+	color: #000;
+}
+.header-lab{
+	width: 100%;
+	height: 100%;
+	background-image: url(../img/taxi.jpg);
+	background-position: bottom;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+.form-header{
+	padding: 3%;
+	margin: 10%
+}
+.yellow{
+	background-color: #FCB425;
+}
+.text-white{
+	color: #FFF;
+}
+.text-black{
+	color: #000
+}
+.text-bold{
+	font-weight: bold;
+}
+.text-middle{
+	line-height: 2;
+	font-size: 1.5vw;
+	padding: 5%
+}
+.middle{
+	padding: 2%;
+	border: 1px solid #fff;
+	margin: 5%
+}
+a{
+	padding: 2%;
+}
+.driver{
+	background-image: url(../img/conduce.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+}
+.text-driver{
+	margin: 10%;
+	padding: 5%;
+	background-color: rgba(62,63,64,0.35);
+}
