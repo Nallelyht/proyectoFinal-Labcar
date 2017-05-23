@@ -14,20 +14,33 @@
 		<nav class="container-fluid my-nav white">
 			<img src="img/logoForma.png" alt="logo">
 			<ul class="nav nav-pills pull-right">
-				<li><a href="#">Viaja</a></li>
-				<li><a href="#">Conduce</a></li>
-				<li><a href="#">inicia sesión</a></li>
+				<li><a href="#viaja">Viaja</a></li>
+				<li><a href="#conduce">Conduce</a></li>
+				<li><a href="#" data-toggle="modal" data-target="#myModal">inicia sesión</a></li>
 			</ul>
 		</nav>
 		<header>
 			<div class="container-fluid header-lab">
 				<div class="row">
-					<div class="col-md-offset-8 col-md-4 yellow form-header pull-right">
-						<h1 class="text-white">Disfruta del viaje <br> Eres dueño de tu tiempo</h1>
-						<h3 class="text-white"><small class="text-white">Viaja con</small> Lab&lt;ar</h3>
-						<a class="white text-black btn text-bold" href="#">REGÍSTRATE</a>
-						<p class="text-white text-center"><small>o bien</small></p>
-						<a class="white text-black btn text-bold">Conviértete en un conductor</a>
+					<div class="col-md-5 yellow form-header pull-right">
+						<h2 class="text-white">
+							Disfruta del viaje <br> Eres dueño de tu tiempo
+						</h2>
+						<h3 class="text-white">
+							<small class="text-white">
+								Viaja con
+							</small> 
+							Lab&lt;ar
+						</h3>
+						<a class="white text-black btn text-bold" href="#">
+							REGÍSTRATE
+						</a>
+						<p class="text-white text-center">
+							<small>o bien</small>
+						</p>
+						<a class="white text-black btn text-bold">
+							Conviértete en un conductor
+						</a>
 					</div>
 				</div>
 			</div>
@@ -46,14 +59,14 @@
 				</div>
 			</div>
 		</section>
-		<section class="container-fluid driver">
+		<section id="conduce" class="container-fluid driver">
 			<div class="text-driver pull-right text-white">
 				<h4><strong>Conduce cuando quieras</strong></h4>
 				<p><small>LabCar es una opción flexible para alcanzar tus metas financieras.</small></p>
 				<a class="yellow text-white btn text-bold">Conviértete en conductor</a>
 			</div>
 		</section>
-		<section class="container-fluid yellow">
+		<section id="viaja" class="container-fluid yellow">
 			<div class="row">
 				<div class="col-md-5 col-md-offset-1 text-white road">
 					<h3>Tarifas</h3>
@@ -119,6 +132,34 @@
 				</div>
 			</div>
 		</footer>
+		<!-- Modal -->
+		<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+			<div class="modal-dialog" role="document">
+				<div class="modal-content">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+						<h4 class="modal-title" id="myModalLabel">Inicia Sesión</h4>
+					</div>
+					<div class="modal-body">
+						<form class="text-center">
+							<i class="fa fa-user-circle fa-5x" aria-hidden="true"></i>
+							<div class="input-group input-group-lg login-input">
+								<i class="fa fa-user input-group-addon" aria-hidden="true"></i>
+								<input type="text" class="form-control" placeholder="Usuario" aria-describedby="sizing-addon1">
+							</div>
+							<div class="input-group input-group-lg login-input">
+								<i class="fa fa-envelope fa-lg input-group-addon" aria-hidden="true"></i>
+								<input type="text" class="form-control" placeholder="Usuario" aria-describedby="sizing-addon1">
+							</div>
+						</form>
+					</div>
+					<div class="modal-footer text-center">
+						<a href="#" class="btn btn-warning center-block">Iniciar Sesión</a>
+						<p class="text-center">Olvidaste tu password. &nbsp; Da click<a href="#">aqui</a></p>
+					</div>
+				</div>
+			</div>
+		</div>
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 		<script src="js/bootstrap.min.js"></script>
 	</body>
