@@ -73,6 +73,20 @@ input:placeholder{
 	margin-bottom: 5%;
 }
 .footer{
-	padding: 5%;
+	padding-top: 5%;
 	background-color: #3e3f40;
+}
+footer a{
+	color: #fff;
+	font-size: .8em;
+}
+.margin-left{
+	margin-left: 5%;
+}
+.img-footer{
+	width: 65%;
+	padding-top: 10%;
+}
+.margin{
+	margin-top: 60%;
 }
