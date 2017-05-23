@@ -32,13 +32,13 @@
 							</small> 
 							Lab&lt;ar
 						</h3>
-						<a class="white text-black btn text-bold" href="#">
+						<a class="white text-black btn text-bold" href="#" data-toggle="modal" data-target="#modalSingIn">
 							REGÍSTRATE
 						</a>
 						<p class="text-white text-center">
 							<small>o bien</small>
 						</p>
-						<a class="white text-black btn text-bold">
+						<a class="white text-black btn text-bold" href="#">
 							Conviértete en un conductor
 						</a>
 					</div>
@@ -63,7 +63,7 @@
 			<div class="text-driver pull-right text-white">
 				<h4><strong>Conduce cuando quieras</strong></h4>
 				<p><small>LabCar es una opción flexible para alcanzar tus metas financieras.</small></p>
-				<a class="yellow text-white btn text-bold">Conviértete en conductor</a>
+				<a href="#" class="yellow text-white btn text-bold">Conviértete en conductor</a>
 			</div>
 		</section>
 		<section id="viaja" class="container-fluid yellow">
@@ -132,7 +132,7 @@
 				</div>
 			</div>
 		</footer>
-		<!-- Modal -->
+		<!-- Modal iniciar sesion-->
 		<div class="modal fade" id="modalLogin" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
 			<div class="modal-dialog" role="document">
 				<div class="modal-content">
@@ -156,6 +156,31 @@
 					<div class="modal-footer text-center">
 						<a href="#" class="btn btn-warning center-block">Iniciar Sesión</a>
 						<p class="text-center btn-road">Olvidaste tu password. &nbsp; Da click<a href="#">aqui</a></p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- Modal registro-->
+		<div class="modal fade" id="modalSingIn" tabindex="-1" role="dialog" aria-labelledby="myModal">
+			<div class="modal-dialog" role="document">
+				<div class="modal-content">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+					</div>
+					<div class="modal-body">
+						<form class="text-center">
+							<p><a href="#">¿YA TIENES UNA CUENTA?</a></p>
+							<p><a href="#">O CREA UNA CUENTA NUEVA</a></p>
+							<div class="row">
+								<label>
+									<input class="form-control" placeholder="Nombre"/>
+									<input class="form-control" placeholder="Apellido"/>
+								</label>
+							</div>
+						</form>
+					</div>
+					<div class="modal-footer text-center">
+						<a href="#" class="btn btn-primary">ENVIAR</a>
 					</div>
 				</div>
 			</div>
