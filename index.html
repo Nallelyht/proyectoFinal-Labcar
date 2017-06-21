@@ -3,7 +3,7 @@
 	<head>
 		<meta charset="utf-8"/>
 		<meta name="viewport" content="width=device-width, initial-scale=1"/>
-		<meta http-equiv="X-UA-Compatible" content="IE-edge"/>
+		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
 		<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
 		<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"/>
 		<link rel="stylesheet" href="css/bootstrap.min.css"/>
@@ -11,18 +11,28 @@
 		<title>Lab&lt;ar</title>
 	</head>
 	<body>
-		<nav class="container-fluid my-nav white">
-			<img src="img/logoForma.png" alt="logo">
-			<ul class="nav nav-pills pull-right">
-				<li><a href="#viaja">Viaja</a></li>
-				<li><a href="#conduce">Conduce</a></li>
-				<li><a href="#" data-toggle="modal" data-target="#modalLogin">Inicia sesión</a></li>
-			</ul>
+		<nav class="container-fluid my-nav white navbar-default">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<img src="img/logoForma.png" alt="logo">
+			</div>
+			<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+				<ul class="nav nav-pills pull-right">
+					<li><a href="#viaja">Viaja</a></li>
+					<li><a href="#conduce">Conduce</a></li>
+					<li><a href="#" data-toggle="modal" data-target="#modalLogin">Inicia sesión</a></li>
+				</ul>
+			</div>
 		</nav>
 		<header>
 			<div class="container-fluid header-lab">
 				<div class="row">
-					<div class="col-md-5 yellow form-header pull-right">
+					<div class="col-xs-5 yellow form-header pull-right">
 						<h2 class="text-white">
 							Disfruta del viaje <br> Eres dueño de tu tiempo
 						</h2>
@@ -48,7 +58,7 @@
 		<section class="container-fluid yellow">
 			<div class="row middle pull-left">
 				<div class="col-md-5">
-					<img alt="iphone" src="img/iPhone6Plus.png"/>
+					<img  class="img-responsive" alt="iphone" src="img/iPhone6Plus.png"/>
 				</div>
 				<div class="col-md-5 text-white">
 					<h3><strong>Descarga la nueva app</strong></h3>
@@ -60,10 +70,12 @@
 			</div>
 		</section>
 		<section id="conduce" class="container-fluid driver">
-			<div class="text-driver pull-right text-white">
-				<h4><strong>Conduce cuando quieras</strong></h4>
-				<p><small>LabCar es una opción flexible para alcanzar tus metas financieras.</small></p>
-				<a href="#" class="yellow text-white btn text-bold">Conviértete en conductor</a>
+			<div class="row">
+				<div class="text-driver col-xs-6 pull-right text-white">
+					<h4><strong>Conduce cuando quieras</strong></h4>
+					<p><small>LabCar es una opción flexible para alcanzar tus metas financieras.</small></p>
+					<button type="button" class="yellow text-white btn text-bold">Conviértete en conductor</button>
+				</div>
 			</div>
 		</section>
 		<section id="viaja" class="container-fluid yellow">
@@ -74,6 +86,7 @@
 					<span class="input-group">
 						<img class="pull-left icon" alt="icono" src="img/shape.png">
 						<input class="yellow text-white form-control input-road" type="text" placeholder="Ingrese su punto de partida"/>
+
 					</span>
 					<br>
 					<span class="input-group">
@@ -84,8 +97,9 @@
 						<a href="#" class="white text-black btn btn-road">Traza una ruta</a>
 					</div>
 				</div>
-				<div class="col-md-6">
-					<img  class="img-map" alt="mapa" src="img/mapa.png">
+				<div id="contenedor-map" class="col-md-5">
+					<div id="map"></div>
+					<button class="btn yellow text-white center-block" id="encuentrame">Encuentrame</button>
 				</div>
 			</div>
 		</section>
@@ -172,28 +186,28 @@
 							<p><a class="btn black text-white" href="#">¿YA TIENES UNA CUENTA?</a></p>
 							<p><a href="#">O CREA UNA CUENTA NUEVA</a></p>
 							<div class="row">
-								<div class="form-group col-md-4 col-md-offset-2">
+								<div class="form-group col-xs-4 col-xs-offset-2">
 									<input class="form-control input-sm"  type="text"  name="first-name" id="first-name" placeholder="Nombre" required/>
 								</div>
-								<div class="form-group col-md-4">	
+								<div class="form-group col-xs-4">	
 									<input class="form-control input-sm"  type="text" name="last-name" id="last-name" placeholder="Apellido" required/>
 								</div>
-								<div class="form-group col-md-8 col-md-offset-2">
+								<div class="form-group col-xs-8 col-xs-offset-2">
 									<input type="email" name="email" id="email" class="form-control input-sm" placeholder="Correo Electrónico: name@example.com" required/>
 								</div>
-								<div class="form-group col-md-8 col-md-offset-2">
+								<div class="form-group col-xs-8 col-xs-offset-2">
 									<input type="tel" name="tel" id="tel" class="form-control input-sm" placeholder="Teléfono">
 								</div>
-								<div class="form-group col-md-8 col-md-offset-2">
+								<div class="form-group col-xs-8 col-xs-offset-2">
 									<input type="password" name="paassword" id="password" class="form-control input-sm" placeholder="Contraseña" required/>
 								</div>
-								<div class="form-group col-md-8 col-md-offset-2">
+								<div class="form-group col-xs-8 col-xs-offset-2">
 									<input type="text" name="city" id="city" class="form-control input-sm" placeholder="Ciudad">
 								</div>
-								<div class="form-group col-md-8 col-md-offset-2">
+								<div class="form-group col-xs-8 col-xs-offset-2">
 									<input type="text" name="key" id="key" class="form-control input-sm" placeholder="(Opcional) Código de Invitación">
 								</div>
-								<div class="form-group col-md-8 col-md-offset-2">
+								<div class="form-group col-xs-8 col-xs-offset-2">
 									<select class="form-control">
 										<option>¿Cómo te enteraste acerca de nuestro servicio?</option>
 										<option>1</option>
@@ -210,7 +224,11 @@
 				</div>
 			</div>
 		</div>
+		<script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCfbBxH2XtCIhZIQkP0PpKN_RaeRrmSs10">
+    </script>
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 		<script src="js/bootstrap.min.js"></script>
+		<script src="js/main.js"></script>
 	</body>
 </html>
